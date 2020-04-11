@@ -7,8 +7,9 @@ while chances != 0:
         break
     else:
         chances = chances - 1
-        print('Please try again.', chances, 'chance remain.')
-#if chances == 0:
-#print('No chance remain!')
-#break
+        if chances > 0:
+            print('Please try again.', chances, 'chance remain.')
+if chances == 0:
+    print('No chance remain!')
+
         
